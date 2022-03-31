@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Like A Pianist</title>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/btn.css' %}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+   <!-- script-->
+   <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+   <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
+   <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+   <script src='http://www.midijs.net/lib/midi.js'></script>
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo"><a href="#">
+                    <img src="{% static 'img/Like A Pianist.png' %}" alt="로고">
+                    <img src="{% static 'img/Like A Pianist txt.png' %}" alt="로고">
+                </a></h1>
+                <!-- <h2 class="introTxt">Like a Pianist</h2> -->
+             <a href="#" class="menuOpen">MENU <span class="lnr lnr-menu"></span></a>
+            </div>
+        <!-- gnb-->
+        <nav class="gnb">
+            <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+            <ul>
+                <li><a href="{% url 'index' %}"> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+{% block content %}
+
+{% endblock %}
+    <!-- footer-->
+    <footer>
+        <ul>
+            <li><br> <br></li>
+            <li>
+                <span></span><br>
+                <span></span><br>
+            </li>
+            <li>@Like A Pianist All Rights Reserved</li>
+        </ul>
+        <a href="#top" class="goTop"><span class="lnr lnr-arrow-up"></span></a>
+    </footer>
+    </div>
+</body>
+</html>
